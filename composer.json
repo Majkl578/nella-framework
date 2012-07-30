@@ -17,6 +17,7 @@
 		}
 	],
 	"autoload": {
+		"files": ["Nella/loader.php"],
 		"psr-0": { "Nella": "" }
 	},
 	"config": {
@@ -29,7 +30,7 @@
 		"doctrine/orm": "2.3.*@beta",
 		"doctrine/migrations": "@dev",
 		"symfony/console": "2.0.*",
-		"nette/nette": "2.0.*"
+		"nette/nette": ">=2.0.4"
 	},
 	"replace": {
 		"nella/nette-addon-doctrine": "self.version",

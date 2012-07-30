@@ -9,17 +9,9 @@
 
 use Nette\Diagnostics\Debugger;
 
-if (!defined('LIBS_DIR')) {
-	define('LIBS_DIR', realpath(__DIR__ . "/../"));
-}
-
 // Load and init Nette Framework
-if (!defined('NETTE')) {
-	$file = LIBS_DIR . "/Nette/loader.php";
-	if (!file_exists($file)) {
-		die('You must load Nette Framework first');
-	}
-	require_once $file;
+if (!class_exists('Nette\Framework')) {
+	die('You must load Nette Framework first');
 }
 
 /**
